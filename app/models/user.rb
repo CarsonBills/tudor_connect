@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
   has_secure_password
-  include BCrypt
-
+  belongs_to :building
 end
