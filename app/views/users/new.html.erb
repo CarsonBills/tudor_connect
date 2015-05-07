@@ -1,0 +1,21 @@
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username, :placeholder => "username..." %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password, :placeholder => "password..." %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, :placeholder => "email..." %>
+  </div>
+  <div class="field">
+    <%= f.label :building_id %><br>
+    <%= f.text_field :building_id, :placeholder => "building id..." %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

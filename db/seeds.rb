@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 buildings = [
+["250 Park Avenue South", "Manhattan", "Admin", 1, 1],
 ["100 7th Avenue", "Manhattan", "Co-op", 19, 115],
 ["2 Grace Court", "Brooklyn", "Co-op", 6, 144],
 ["1 Bowery", "Manhattan", "Co-op", 44, 787],
@@ -57,7 +58,6 @@ buildings = [
 ["167 East 78th Street", "Manhattan", "Co-op", 10, 39],
 ["120 East 87th Street", "Manhattan", "Condo", 17, 221],
 ["14 Greene Street", "Manhattan", "Co-op", 5, 6],
-["250 Park Avenue South", "Manhattan", "Admin", 1, 1]
 ]
 
 buildings.each do |address, borough, owner, stories, units|
