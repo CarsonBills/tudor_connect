@@ -3,3 +3,4 @@
 <h2> <%= @user.building.address %> </h2>
 
 <%= link_to("Logout", sessions_path, :method => 'delete') %>
+<%= link_to("#{@user.building.address}", building_path(@user.building)) %>
