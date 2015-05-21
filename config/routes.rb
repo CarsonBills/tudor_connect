@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :buildings
 
+  resources :documents
+
   get '/login' => "sessions#new"
 
   delete '/sessions' => 'sessions#destroy'
