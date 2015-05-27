@@ -28,7 +28,6 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        binding.pry
         format.html { redirect_to "/buildings/#{@post.building_id}", notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else

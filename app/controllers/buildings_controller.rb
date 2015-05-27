@@ -2,9 +2,8 @@ class BuildingsController < ApplicationController
 
   def show
     @building = Building.find(params[:id])
-    @posts = Post.all
+    @posts = Post.where(building_id: params[:id])
     @user = current_user
-    binding.pry
   end
 
   def admin

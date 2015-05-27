@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  get "/buildings/:id/admin" => "buildings#admin"
+  get "/buildings/:id/admin" => "buildings#admin", as: "building_admin"
 
   get '/login' => "sessions#new"
 

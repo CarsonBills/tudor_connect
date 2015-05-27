@@ -12,5 +12,11 @@
 	</nav>
 </div>
 
+<% if @user.building_id == 1 %>
+	<%= link_to "Admin", building_admin_path%>
+<% end %>
 
-<%= @posts.first.title %>
+<% @posts.each do |post| %>
+	<%= post.title %> <br>
+	<%= post.body %>
+<% end %>
