@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :posts
   root "pages#landing"
 
   resources :users, :only => [:show, :new, :create, :destroy]
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
   resources :buildings
 
   resources :posts
+
+  get "/buildings/:id/admin" => "buildings#admin"
 
   get '/login' => "sessions#new"
 
