@@ -1,1 +1,16 @@
-<h1> Add building posts </h1>
+<%= form_for(@post) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, :placeholder => "Memo..." %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body, :placeholder => "Content...", :size => "70" %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :building_id, :value => @building.id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

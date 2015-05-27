@@ -8,7 +8,8 @@ class BuildingsController < ApplicationController
   end
 
   def admin
-
+    @building = Building.find(params[:id])
+    @post = Post.new
   end
 
 end
