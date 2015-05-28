@@ -7,6 +7,9 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = current_user
+    if @user.building_id == 1
+      @buildings = Building.all
+    end
   end
 
   # GET /users/new

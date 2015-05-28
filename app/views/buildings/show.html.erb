@@ -13,10 +13,10 @@
 </div>
 
 <% if @user.building_id == 1 %>
-	<%= link_to "Admin", building_admin_path%>
+	<%= link_to "Admin", building_admin_path %>
 <% end %>
 
 <% @posts.each do |post| %>
-	<%= post.title %> <br>
+	<%= post.title %>
 	<%= post.body %>
 <% end %>
