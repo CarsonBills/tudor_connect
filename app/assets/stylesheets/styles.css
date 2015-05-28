@@ -1,7 +1,54 @@
 body {
 	background-color: lightblue;
+	padding: 0;
+}
+
+.content {
+	position: absolute;
+	top: 50px;
 }
 
 ul {
 	list-style-type: none;
+}
+
+.building_link {
+	display: inline-block;
+	width: 244px;
+	height: 30px;
+	background-color: grey;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.building_links {
+	text-align: center;
+}
+
+a {
+	font-size: 1.25em;
+	text-decoration: none;
+}
+
+.nav {
+	position: absolute;
+	background-color: grey;
+	min-width: 100%;
+	top: 0;
+	left: 0;
+	height: 50px;
+}
+
+.left_nav {
+	display: inline-block;
+	left: 0;
+}
+
+.right_nav {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	background-color: lightgrey;
+	line-height: 50px;
 }

@@ -2,14 +2,16 @@
 
 <h2> <%= @user.building.address %> </h2>
 
-<%= link_to("Logout", sessions_path, :method => 'delete') %> <br>
-
-<% if @user.building_id == 1 %>
-	<% @buildings.each do |building| %>
-		<%= link_to("#{building.address}", building_path(building)) %><br>
+<div class="building_links">
+	<% if @user.building_id == 1 %>
+		<% @buildings.each do |building| %>
+			<div class="building_link">
+				<%= link_to("#{building.address}", building_path(building)) %><br>
+			</div>
+		<% end %>
+	<% else %>
+		<div class="building_link">
+			<%= link_to("#{@user.building.address}", building_path(@user.building)) %>
+		</div>
 	<% end %>
-<% else %>
-	<%= link_to("#{@user.building.address}", building_path(@user.building)) %>
-<% end %>
-
-
+</div>
