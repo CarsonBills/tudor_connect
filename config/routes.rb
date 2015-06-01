@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get "/reset" => "users#reset", as: "reset_password"
 
+  post "/forgot_password" => "users#forgot_password"
+
   resources :sessions, :only => [:create]
 
   resources :buildings

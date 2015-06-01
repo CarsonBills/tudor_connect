@@ -1,2 +1,9 @@
 <h1> Enter your email address: </h1>
 
+<%= form_tag("forgot_password") do %>
+	<div class="field">
+		<%= label_tag :email %>
+		<%= text_field_tag :email, params[:email]%>
+	</div>
+	<div class="actions"><%= submit_tag "Reset Password"%></div>
+<% end %>
