@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-
-  resources :posts
   root "pages#landing"
 
-  resources :users, :only => [:show, :new, :create, :destroy]
+  resources :users
+
+  get "/reset" => "users#reset", as: "reset_password"
 
   resources :sessions, :only => [:create]
 

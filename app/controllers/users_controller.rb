@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   #before_filter :authorize, except: [:new, :create]
   #before_filter :check_admin, only: [:new, :create]
 
@@ -45,6 +45,23 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def edit
+  end
+
+  def update
+    @user = User.find(params[:id])
+
+    if @user.update_attributes(user_params)
+      redirect_to @user
+    else
+      render action: "edit"
+    end
+  end
+
+  def reset
+    render :reset
   end
 
   private
