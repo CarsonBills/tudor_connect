@@ -4,6 +4,9 @@
 
 <div class="building_links">
 	<% if @user.building_id == 1 %>
+		<div class="new_user">
+			<%= link_to "New User", new_user_path %>
+		</div>
 		<% @buildings.each do |building| %>
 			<div class="building_link">
 				<%= link_to("#{building.address}", building_path(building)) %><br>
