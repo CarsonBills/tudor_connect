@@ -1,16 +1,5 @@
 <h1> <%= @building.address %> </h1>
 
-<div class="building_menu">
-	<nav>
-		<ul>
-			<li>Monthly Financials</li>
-			<li>Contact Property Manager</li>
-			<li>Renovation Forms</li>
-			<li>Elections/Proxies</li>
-			<li>Newsletter</li>
-		</ul>
-	</nav>
-</div>
 
 <% if @user.building_id == 1 %>
 	<%= link_to "Admin", building_admin_path %>
@@ -19,6 +8,6 @@
 <% @posts.each do |post| %>
 	<div class="post">
 		<%= link_to(post.title, controller: "posts", action: "show", id: post.id)%>
-		<%= post.body %>
+		<%= post.created_at.strftime("%B/%d/%Y") %>
 	</div>
 <% end %>
