@@ -17,6 +17,8 @@
 <% end %>
 
 <% @posts.each do |post| %>
-	<%= post.title %>
-	<%= post.body %>
+	<div class="post">
+		<%= link_to(post.title, controller: "posts", action: "show", id: post.id)%>
+		<%= post.body %>
+	</div>
 <% end %>
