@@ -1,7 +1,11 @@
-<h1> <%= @post.title %> </h1>
+<div class="post single_post">
+	<h1> <%= @post.title %> </h1>
 
-<h1> <%= @post.created_at.strftime("Created on: %B/%d/%Y") %> </h1>
+	<h1> <%= @post.created_at.strftime("Created on: %B/%d/%Y") %> </h1>
 
-<h1> <%= @post.body %> </h1>
+	<h1> <%= @post.body %> </h1>
+</div>
 
-<h1><%= link_to("Back", controller: "buildings", action: "show", id: @post.building_id)%></h1>
+<div class="back_button">
+	<h1><%= link_to("Back", controller: "buildings", action: "show", id: @post.building_id)%></h1>
+</div>

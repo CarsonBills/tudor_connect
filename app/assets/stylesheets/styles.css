@@ -4,8 +4,12 @@ body {
 }
 
 .content {
-	position: absolute;
-	top: 50px;
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
 }
 
 ul {
@@ -45,6 +49,7 @@ a {
 	left: 0;
 	background-color: #004C99;
 	height: 50px;
+	width: 35%;
 }
 
 .right_nav {
@@ -61,4 +66,26 @@ a {
 
 a.logo {
 	color: #F5F5F5;
+}
+
+.post {
+	background-color: white;
+	width: 60%;
+	height: 4em;
+	margin: 1em auto 1em auto;
+	text-align: center;
+}
+
+.single_post{
+	display: block;
+	margin-top: 10%;
+	height: 100%;
+}
+
+.back_button {
+	display: inline-block;
+	background-color: white;
+	width: 15%;
+	height: 20%;
+	margin: 1em auto 1em auto;
 }
