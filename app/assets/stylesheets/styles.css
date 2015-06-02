@@ -1,5 +1,5 @@
 body {
-	background-color: lightblue;
+	background-image: url('p4_@2X.png');
 	padding: 0;
 }
 
@@ -33,7 +33,7 @@ a {
 
 .nav {
 	position: absolute;
-	background-color: grey;
+	background-color: lightgrey;
 	min-width: 100%;
 	top: 0;
 	left: 0;
@@ -43,6 +43,8 @@ a {
 .left_nav {
 	display: inline-block;
 	left: 0;
+	background-color: #004C99;
+	height: 50px;
 }
 
 .right_nav {
@@ -51,4 +53,12 @@ a {
 	right: 0;
 	background-color: lightgrey;
 	line-height: 50px;
+	height: 50px;
+}
+.nav_logo {
+	display: inline-block;
+}
+
+a.logo {
+	color: #F5F5F5;
 }
