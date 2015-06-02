@@ -49,7 +49,8 @@ a {
 	left: 0;
 	background-color: #004C99;
 	height: 50px;
-	width: 35%;
+	min-width: 100px;
+	padding-left: 20px;
 }
 
 .right_nav {
@@ -69,17 +70,19 @@ a.logo {
 }
 
 .post {
+	display: inline-block;
 	background-color: white;
-	width: 60%;
-	height: 4em;
+	min-width: 250px;
+	height: 3em;
 	margin: 1em auto 1em auto;
-	text-align: center;
+	padding-top: 1.5em;
 }
 
 .single_post{
 	display: block;
 	margin-top: 10%;
 	height: 100%;
+	width: 90%;
 }
 
 .back_button {

@@ -6,7 +6,9 @@
 
 
 <% if @user.building_id == 1 %>
-	<%= link_to "Admin", building_admin_path %>
+	<div>
+		<%= link_to "Admin", building_admin_path %>
+	</div>
 <% end %>
 
 <% @posts.each do |post| %>
