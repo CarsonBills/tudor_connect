@@ -1,5 +1,9 @@
 <h1> <%= @building.address %> </h1>
 
+<div class="email_pm">
+	<%= mail_to "propertymanager@tudorrealty.com", "Contact Property Manager" %>
+</div>
+
 
 <% if @user.building_id == 1 %>
 	<%= link_to "Admin", building_admin_path %>
