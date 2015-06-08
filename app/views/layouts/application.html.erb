@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%= render partial: "layouts/nav"%>
+<%= render partial: "layouts/nav" unless current_page?("/") %>
 
 <div class="content">
 	<%= yield %>

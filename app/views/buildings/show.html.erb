@@ -13,7 +13,6 @@
 
 <% @posts.each do |post| %>
 	<div class="post">
-		<%= link_to(post.title, controller: "posts", action: "show", id: post.id)%>
-		<%= post.created_at.strftime("%B/%d/%Y") %>
+		<%= link_to(post.title + " - " + post.created_at.strftime("%B/%d/%Y"), controller: "posts", action: "show", id: post.id)%>
 	</div>
 <% end %>
