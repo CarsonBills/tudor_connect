@@ -1,21 +1,38 @@
 body {
-	background-image: url('p4_@2X.png');
+	background-image: url('grey_bkgrd.png');
 	padding: 0;
+	margin: 0;
 }
 
 .content {
-	height: 100%;
-	width: 100%;
+	min-height: 100%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
+	margin-bottom: 50px;
 	text-align: center;
+	padding: 50px;
+	background-color: #EDEDED;
 }
 
 .background_img {
 	position: absolute;
 	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: 0;
 	z-index: -1;
+}
+
+.welcome_text {
+	width: 40%;
+	height: 30%;
+	margin: auto auto auto auto;
+	background: rgb(230, 230, 230);
+	background: rgba(230, 230, 230, .6);
+	padding: 3em;
+	border-radius: 25px;
 }
 
 img {
@@ -48,7 +65,7 @@ a {
 
 .nav {
 	position: absolute;
-	background-color: lightgrey;
+	background-color: #EDEDED;
 	min-width: 100%;
 	top: 0;
 	left: 0;
@@ -68,9 +85,15 @@ a {
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	background-color: lightgrey;
+	background-color: #EDEDED;
 	line-height: 50px;
 	height: 50px;
+}
+
+.nav_link {
+	display: inline-block;
+	padding-left: 5px;
+	border-left: 2px dotted grey; 
 }
 .nav_logo {
 	display: inline-block;

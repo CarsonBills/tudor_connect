@@ -1,14 +1,22 @@
-<h1> Welcome to Tudor Connect </h1>
-
 <div class="background_img">
 	<%= image_tag "1.jpg"%>
 </div>
 
+<div class="welcome_text">
 
-<% if current_user? %>
-	<h1> <%= link_to("Enter", controller: "buildings", action: "show", id: @user.building_id)%> </h1>
-<% else %>
-	<h1> <%= link_to("Login", login_path) %> </h1>
-<% end %>
+	<h1> Welcome to Tudor Connect </h1>
 
-<h4> <%= link_to("Forgot your password?", controller: "users", action: "reset") %> </h4>
+	<% if current_user? %>
+		<h1> <%= link_to("Enter", controller: "buildings", action: "show", id: @user.building_id)%> </h1>
+	<% else %>
+		<h1> <%= link_to("Login", login_path) %> </h1>
+	<% end %>
+
+	<h4> <%= link_to("Forgot your password?", controller: "users", action: "reset") %> </h4>
+</div>
+
+<script>
+
+	$(".content").css("background-color", "transparent")
+
+</script>

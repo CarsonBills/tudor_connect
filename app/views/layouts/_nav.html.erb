@@ -5,11 +5,19 @@
 
 	<div class="right_nav">
 		<% if current_user? %>
-			<%= link_to("My Building", controller: "buildings", action: "show", id: @user.building_id)%>
-			<%= link_to("My Profile", controller: "users", action: "show", id: @user.id)%>
-			<%= link_to("Logout", sessions_path, :method => 'delete') %>
+			<div class="nav_link">
+				<%= link_to("My Building", controller: "buildings", action: "show", id: @user.building_id)%>
+			</div>
+			<div class="nav_link">
+				<%= link_to("My Profile", controller: "users", action: "show", id: @user.id)%>
+			</div>
+			<div class="nav_link">
+				<%= link_to("Logout", sessions_path, :method => 'delete')%>
+			</div>
 		<% else %>
-			<%= link_to("Login", login_path) %>
+			<div class="nav_link">
+				<%= link_to("Login", login_path) %>
+			</div>
 		<% end %>
 	</div>
 </div>
