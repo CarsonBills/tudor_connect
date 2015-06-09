@@ -1,0 +1,228 @@
+/* line 1, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/CarsonBills/src/projects/tudor_connect/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+body {
+	background-image: url('grey_bkgrd.png');
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	min-height: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+	padding: 50px;
+	background-color: #EDEDED;
+}
+
+.background_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	z-index: -1;
+}
+
+.welcome_text {
+	width: 50%;
+	height: 30%;
+	margin: auto auto auto auto;
+	background: rgb(230, 230, 230);
+	background: rgba(230, 230, 230, .6);
+	padding: 3em;
+	border-radius: 25px;
+}
+
+.welcome_text h1 {
+	line-height: 1.25em;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.building_link {
+	display: inline-block;
+	width: 244px;
+	height: 30px;
+	background-color: grey;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.building_links {
+	text-align: center;
+}
+
+a {
+	font-size: 1.25em;
+	text-decoration: none;
+}
+
+.nav {
+	position: absolute;
+	background-color: #EDEDED;
+	min-width: 100%;
+	top: 0;
+	left: 0;
+	height: 50px;
+}
+
+.left_nav {
+	display: inline-block;
+	left: 0;
+	background-color: #004C99;
+	height: 50px;
+	min-width: 100px;
+	padding-left: 20px;
+}
+
+.right_nav {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	background-color: #EDEDED;
+	line-height: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.nav_link {
+	display: inline-block;
+	padding-left: 5px;
+	border-left: 2px dotted grey; 
+}
+.nav_logo {
+	display: inline-block;
+}
+
+a.logo {
+	color: #F5F5F5;
+}
+
+.post {
+	display: inline-block;
+	background-color: white;
+	min-width: 250px;
+	height: 3em;
+	margin: 1em auto 1em auto;
+	padding-top: 1.5em;
+}
+
+.single_post{
+	display: block;
+	margin-top: 10%;
+	height: 100%;
+	width: 90%;
+}
+
+.back_button {
+	display: inline-block;
+	background-color: white;
+	width: 15%;
+	height: 20%;
+	margin: 1em auto 1em auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
