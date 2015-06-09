@@ -31,10 +31,8 @@ class PostsController < ApplicationController
       if @post.save
         new_post(@post)
         format.html { redirect_to "/buildings/#{@post.building_id}", notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
   end

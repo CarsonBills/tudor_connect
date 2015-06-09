@@ -31,11 +31,6 @@ ActiveRecord::Schema.define(version: 20150527170422) do
     t.string   "url_path"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "form_file_name"
-    t.string   "form_content_type"
-    t.integer  "form_file_size"
-    t.datetime "form_updated_at"
-    t.integer  "building_id"
   end
 
   create_table "posts", force: true do |t|
