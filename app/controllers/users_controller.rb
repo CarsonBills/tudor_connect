@@ -58,7 +58,7 @@ class UsersController < ApplicationController
     random_password = Array.new(10).map { (65 + rand(58)).chr }.join
     @user.password = random_password
     @user.save!
-    UserMailer.password_reset(@user, random_password).deliver
+    #UserMailer.password_reset(@user, random_password).deliver
     redirect_to root_path
   end
 

@@ -38,7 +38,7 @@ class PostsController < ApplicationController
 
   def new_post(post)
     building = Building.where(id: post.building_id).first
-    UserMailer.new_memo(building).deliver
+    #UserMailer.new_memo(building).deliver
     redirect_to "/buildings/#{@post.building_id}"
   end
 
