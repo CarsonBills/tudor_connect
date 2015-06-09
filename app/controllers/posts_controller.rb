@@ -29,6 +29,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        new_post(@post)
         format.html { redirect_to "/buildings/#{@post.building_id}", notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
@@ -36,6 +37,11 @@ class PostsController < ApplicationController
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def new_post(post)
+    building = Building.where(id: post.building_id).first
+    UserMailer.new_memo(building).deliver
   end
 
   # PATCH/PUT /posts/1

@@ -55,11 +55,9 @@ class UsersController < ApplicationController
 
   def forgot_password
     @user = User.find_by_email(params[:email])
-    binding.pry
     random_password = Array.new(10).map { (65 + rand(58)).chr }.join
     @user.password = random_password
     @user.save!
-    binding.pry
     UserMailer.password_reset(@user, random_password).deliver
     redirect_to root_path
   end
