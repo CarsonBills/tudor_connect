@@ -28,7 +28,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
       new_post(@post)
-      redirect_to building_path(building)
+      return false
     else
       render :new
     end
@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   def new_post(post)
     building = Building.where(id: post.building_id).first
     #UserMailer.new_memo(building).deliver
-    redirect_to root_path
+    redirect_to building_path(@post.building_id)
   end
 
   # PATCH/PUT /posts/1
