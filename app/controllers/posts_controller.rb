@@ -26,20 +26,18 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-
-    respond_to do |format|
-      if @post.save
-        new_post(@post)
-      else
-        format.html { render :new }
-      end
+    if @post.save
+      new_post(@post)
+      redirect_to building_path(building)
+    else
+      render :new
     end
   end
 
   def new_post(post)
     building = Building.where(id: post.building_id).first
     #UserMailer.new_memo(building).deliver
-    redirect_to "/buildings/#{@post.building_id}"
+    redirect_to root_path
   end
 
   # PATCH/PUT /posts/1
