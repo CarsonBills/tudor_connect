@@ -28,11 +28,9 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         session[:user_id] = @user.id
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render json: { status: :created, username: @user.username, id: @user.id } }
+        format.html { redirect_to @user }
       else
         format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -42,7 +40,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to users_url  }
       format.json { head :no_content }
     end
   end
@@ -59,6 +57,7 @@ class UsersController < ApplicationController
     @user.password = random_password
     @user.save!
     #UserMailer.password_reset(@user, random_password).deliver
+    flash[:notice] = "Email with new password sent"
     redirect_to root_path
   end
 
